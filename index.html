@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JR Exclusive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="Banner1.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</header>
+
+<div class="slider" id="slider">
+  <img src="slider1.jpg" class="slide active" alt="Slide 1">
+  <img src="slider2.jpg" class="slide" alt="Slide 2">
+</div>
+
+<div class="marquee">
+  <p>🚚📦En la compra de un producto mayor a 4,999 recibe una cartera de regalo y envío gratis en cualquier parte de nuestra republica 🚚📦.</p>
+</div>
+
+<main id="inicio" class="productos container">
+  <div class="producto" onclick="mostrarSeccion('mujeres')" style="cursor: pointer;">
+    <img src="Dama.jpg" alt="Sección Mujeres">
+    <h2>Moda para Mujeres</h2>
+    <p>Explora la colección</p>
+  </div>
+  
+  <div class="producto" onclick="mostrarSeccion('hombres')" style="cursor: pointer;">
+    <img src="Caballero.jpg" alt="Sección Hombres">
+    <h2>Moda para Hombres</h2>
+    <p>Descubre nuestras prendas</p>
+  </div>
+</main>
+
+<section id="seccion-mujeres" class="productos container" style="display: none;">
+  <button onclick="mostrarSeccion('inicio')" class="btn-regresar">← Regresar</button>
+  <div class="producto"><img src="D1.jpg" alt=""><h2>Bolso Coach Tabby</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="D2.jpg" alt=""><h2>Saint Laurent bolsa bucket Le 37 mini</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="D3.jpg" alt=""><h2>Cartera de napa Matelassé pequeña Miu Miu</h2><p>$6,700 MNX</p></div>
+  <div class="producto"><img src="D4.jpg" alt=""><h2>Bolsa coach Rowan Satchel</h2><p>$5,000 MXN</p></div>
+  <div class="producto"><img src="D5.jpg" alt=""><h2>Bolsa saint laurent PUFFER SMALL DE NAPA ACOLCHADA BLANC VINTAGE</h2><p>$6,000 MXN</p></div>
+  <div class="producto"><img src="D6.jpg" alt=""><h2>Cartera Gucci Strawberry</h2><p>$6,700 MXN</p></div>
+  <div class="producto"><img src="D7.jpg" alt=""><h2>Cartera Trotter con Saddle 1998</h2><p>$7,200 MXN</p></div>
+  <div class="producto"><img src="D8.jpg" alt=""><h2>Bolso Saint laurent Solferino</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="D9.jpg" alt=""><h2>SAINT LAURENT SUNSET CROSSBODY</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="D10.jpg" alt=""><h2>Bolso Dior</h2><p>$6,500 MXN</p></div>
+</section>
+
+<!-- SECCIÓN HOMBRES -->
+<section id="seccion-hombres" class="productos container" style="display: none;">
+  <button onclick="mostrarSeccion('inicio')" class="btn-regresar">← Regresar</button>
+  <div class="producto"><img src="C (1).jpg" alt=""><h2>Mochila Coach</h2><p>$6,000 MXN</p></div>
+  <div class="producto"><img src="C (2).jpg" alt=""><h2>Mochila Coach</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="C (3).jpg" alt=""><h2>Bolso Dior Safari mini con bandolera</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="C (4).jpg" alt=""><h2>Balenciaga Explorer</h2><p>$7,000 MXN</p></div>
+  <div class="producto"><img src="C (5).jpg" alt=""><h2>Cartera coach</h2><p>$3,900 MXN</p></div>
+  <div class="producto"><img src="C (6).jpg" alt=""><h2>Louis Vuitton keepall</h2><p>$12,000 MXN</p></div>
+  <div class="producto"><img src="C (7).jpg" alt=""><h2>Bolso Burberry</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="C (8).jpg" alt=""><h2>Bolso Dior</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="C (9).jpg" alt=""><h2>Bolso Dior</h2><p>$6,500 MXN</p></div>
+  <div class="producto"><img src="C (10).jpg" alt=""><h2>Mochila Dior</h2><p>$7,200 MXN</p></div>
+
+</section>
+
+<footer>
+  <h2>Contáctanos Para Realizar Tu Pedido</h2>
+  <p>Samuel Pérez: +52 33 2831 3610</p>
+  <p>Eduardo Rivera: +52 33 2918 7463</p>
+  
+  <ul class="social-wrapper">
+    <li class="icon whatsapp">
+      <a href="https://whatsapp.com/channel/0029VbBJDr04inoqAhNRpj0o" target="_blank" aria-label="WhatsApp" rel="noopener noreferrer">
+        <img src="whts.png" alt="WhatsApp" class="icon-img">
+        <span class="tooltip">WhatsApp</span>
+      </a>
+    </li>
+    <li class="icon instagram">
+      <a href="https://www.instagram.com/jr__exclusive00_" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <img src="ig.png" alt="WhatsApp" class="icon-img">
+        <span class="tooltip">Instagram</span>
+      </a>
+    </li>
+  </ul>
+  <h3>Redes Sociales y Novedades</h3>
+</footer>
+
+<script src="Js.js"></script>
+<script>
+  function mostrarSeccion(seccion) {
+    const inicio = document.getElementById('inicio');
+    const mujeres = document.getElementById('seccion-mujeres');
+    const hombres = document.getElementById('seccion-hombres');
+
+    // Oculta todas
+    inicio.style.display = 'none';
+    mujeres.style.display = 'none';
+    hombres.style.display = 'none';
+
+    // Muestra la correspondiente
+    if (seccion === 'mujeres') {
+      mujeres.style.display = 'grid';
+    } else if (seccion === 'hombres') {
+      hombres.style.display = 'grid';
+    } else {
+      inicio.style.display = 'grid';
+    }
+  }
+</script>
+</body>
+</html>
